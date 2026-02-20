@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/device_path"/>
+        <EditText
+            android:id="@+id/etDevicePath"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:text="/dev/ttyS1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/baud_rate"
+            android:layout_marginTop="12dp"/>
+        <EditText
+            android:id="@+id/etBaudRate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:text="115200"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/paper_width"
+            android:layout_marginTop="12dp"/>
+        <EditText
+            android:id="@+id/etPaperWidth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:text="576"/>
+
+        <!-- Toggle network sharing -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Share printer on network"
+            android:layout_marginTop="12dp"/>
+        <Switch
+            android:id="@+id/swShare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false" />
+
+        <!-- TCP port for sharing -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Share port (TCP)"
+            android:layout_marginTop="12dp"/>
+        <EditText
+            android:id="@+id/etSharePort"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:text="9100"/>
+
+        <!-- Toggle USB (Brother) sharing -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Share printer (USB) on network"
+            android:layout_marginTop="12dp"/>
+        <Switch
+            android:id="@+id/swShareUsb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"/>
+
+        <!-- TCP port for USB share -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Share USB port (TCP)"
+            android:layout_marginTop="12dp"/>
+        <EditText
+            android:id="@+id/etShareUsbPort"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:text="9101"/>
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/save"
+            android:layout_marginTop="16dp"/>
+
+    </LinearLayout>
+</ScrollView>

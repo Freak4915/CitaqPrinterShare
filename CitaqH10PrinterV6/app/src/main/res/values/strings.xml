@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Citaq H10 Printer</string>
+    <string name="print">Print QR</string>
+    <string name="settings">Settings</string>
+    <string name="save">Save</string>
+    <string name="device_path">Device path</string>
+    <string name="baud_rate">Baud rate</string>
+    <string name="paper_width">Paper width (dots)</string>
+    <string name="status_disconnected">Disconnected</string>
+    <string name="status_printing">Printing…</string>
+    <string name="status_done">Done</string>
+</resources>

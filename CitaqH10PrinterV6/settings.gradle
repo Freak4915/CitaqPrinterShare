@@ -1,0 +1,2 @@
+rootProject.name = 'CitaqH10Printer'
+include ':app'
